@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import useAPI from '../../services/UseAPI';
-import Spinner from '../../elements/Spinner';
-import Error from '../../elements/Error';
-import Rating from '../../elements/Rating';
-import MovieCard from '../../elements/MovieCard';
+import Spinner from '../Spinner';
+import Error from '../Error';
+import Rating from '../Rating';
+import MovieCard from '../MovieCard';
 import { genres as genreList } from '../Nav';
 
 import person from '../../assets/no-person.svg';

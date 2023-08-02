@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Search from '../../elements/Search';
+import Search from '../Search';
 
 const HeaderContainer = styled.header`
 	position: sticky;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import NotFound from '../../components/NotFound';
+import NotFound from '../NotFound';
 import img from '../../assets/error.svg';
 
 const ErrorContainer = styled.span`

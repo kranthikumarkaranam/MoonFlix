@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import useAPI from '../../services/UseAPI';
-import Spinner from '../../elements/Spinner';
-import Error from '../../elements/Error';
-import MovieCard from '../../elements/MovieCard';
+import Spinner from '../Spinner';
+import Error from '../Error';
+import MovieCard from '../MovieCard';
 
 const ListContainer = styled.div`
 	.big-card {

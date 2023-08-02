@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import useAPI from '../../services/UseAPI';
-import Spinner from '../../elements/Spinner';
-import Error from '../../elements/Error';
+import Spinner from '../Spinner';
+import Error from '../Error';
 import person from '../../assets/no-person.svg';
-import MovieCard from '../../elements/MovieCard';
+import MovieCard from '../MovieCard';
 
 const Container = styled.div`
 	display: flex;

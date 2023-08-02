@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import AOS from 'aos';
 import Nav from '../Nav';
 import Header from '../Header';
-import Spinner from '../../elements/Spinner';
+import Spinner from '../Spinner';
 
 import 'aos/dist/aos.css';
 import '../../reset.scss';

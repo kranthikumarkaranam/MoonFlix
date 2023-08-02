@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import useAPI from '../../services/UseAPI';
-import Spinner from '../../elements/Spinner';
+import Spinner from '../Spinner';
 import imgNotFound from '../../assets/no-image.svg';
 
 const SearchContainer = styled.div`
