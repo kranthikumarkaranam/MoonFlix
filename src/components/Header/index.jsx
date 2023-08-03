@@ -1,6 +1,8 @@
+// Importing styled-components and the Search component
 import styled from 'styled-components';
 import Search from '../Search';
 
+// Styled component for the header container
 const HeaderContainer = styled.header`
 	position: sticky;
 	top: 0;
@@ -19,9 +21,11 @@ const HeaderContainer = styled.header`
 	}
 `;
 
+// Header component to render the header of the application
 export default function Header() {
 	return (
 		<HeaderContainer>
+			{/* Rendering the Search component */}
 			<Search />
 		</HeaderContainer>
 	);

@@ -1,3 +1,4 @@
+// Importing necessary modules and components from React and other libraries
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
@@ -7,6 +8,7 @@ import Error from '../Error';
 import person from '../../assets/no-person.svg';
 import MovieCard from '../MovieCard';
 
+// Styled component for the container of the Actor details page
 const Container = styled.div`
 	display: flex;
 	flex-wrap: wrap;
@@ -87,25 +89,32 @@ const months = [
 	'Dec',
 ];
 
+// Component for the Actor details page
 export default function Actor() {
+	// Extracting the actor's ID from the URL parameters
 	const { id } = useParams();
+	// State to store the fetched actor data
 	const [data, setData] = useState({});
 	const { getActor, loading, error } = useAPI();
 	const { name, birthday, biography, profile_path, imdb_id } = data;
 
+	// Extracting day, month, and year from the birthday to display it in a user-friendly format
 	const date = new Date(birthday),
 		day = date.getDate(),
 		month = months[date.getMonth()],
 		year = date.getFullYear();
 
+	// Function to fetch the actor's data from the API
 	const fetchData = async () => {
 		setData(await getActor(id));
 	};
 
+	// Fetch the actor's data when the component mounts or when the ID changes
 	useEffect(() => {
 		fetchData();
 	}, [id]);
 
+	// Render the Actor details page with the fetched data
 	return (
 		<>
 			{loading ? (
@@ -114,6 +123,7 @@ export default function Actor() {
 				<Error />
 			) : (
 				<Container>
+					{/* Displaying the actor's thumbnail */}
 					<div className='thumbnail'>
 						<img
 							src={
@@ -124,14 +134,14 @@ export default function Actor() {
 							alt={name}
 						/>
 					</div>
+					{/* Displaying the actor's description */}
 					<div className='description'>
 						<h1 className='title'>{name}</h1>
 						<p className='born'>
 							Born: {month}-{day}-{year}
 						</p>
-
 						<p className='biography'>{biography}</p>
-
+						{/* Links to the actor's IMDb page */}
 						<div className='links'>
 							<a
 								href={`https://www.imdb.com/name/${imdb_id}`}
@@ -146,6 +156,7 @@ export default function Actor() {
 						</div>
 					</div>
 
+					{/* Component to display movies featuring the actor */}
 					<Movies id={id} />
 				</Container>
 			)}
@@ -153,6 +164,7 @@ export default function Actor() {
 	);
 }
 
+// Styled component for the container of movies featuring the actor
 const MoviesContainer = styled.div`
 	flex: 1 1 100%;
 	h1 {
@@ -207,23 +219,28 @@ const MoviesContainer = styled.div`
 	}
 `;
 
+// Component to display movies featuring the actor
 const Movies = ({ id }) => {
 	const { getMoviesWithActor, loading, error } = useAPI();
 	const [page, setPage] = useState(1);
 	const [data, setData] = useState({});
 
+	// Function to fetch movies featuring the actor from the API
 	const fetchData = async () => {
 		setData(await getMoviesWithActor(id, page));
 	};
 
+	// Fetch movies featuring the actor when the component mounts or when the ID or page changes
 	useEffect(() => {
 		fetchData();
 	}, [id, page]);
 
+	// Render the list of movies featuring the actor
 	return (
 		<MoviesContainer>
 			<h1>Movies</h1>
 
+			{/* Displaying the list of movies in a grid */}
 			<div className='list'>
 				{loading ? (
 					<Spinner />
@@ -239,7 +256,8 @@ const Movies = ({ id }) => {
 				)}
 			</div>
 
-			{data.total_pages != 1 ? (
+			{/* Pagination buttons for navigating through the list of movies */}
+			{data.total_pages !== 1 ? (
 				<div className='pagination'>
 					<button
 						disabled={page === 1}

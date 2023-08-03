@@ -1,10 +1,11 @@
+// Import required libraries and components
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import useAPI from '../../services/UseAPI';
-import Spinner from '../Spinner';
-import imgNotFound from '../../assets/no-image.svg';
+import useAPI from '../../services/UseAPI'; // Custom hook for search API
+import Spinner from '../Spinner'; // Loading spinner component
+import imgNotFound from '../../assets/no-image.svg'; // Default image for not found images
 
+// Styled component to create a container for the search bar and dropdown list
 const SearchContainer = styled.div`
 	position: relative;
 	label {
@@ -78,31 +79,37 @@ const SearchContainer = styled.div`
 	}
 `;
 
+// Search component
 export default function Search() {
-	const [search, setSearch] = useState('');
-	const [showList, setShowList] = useState(false);
-	const [data, setData] = useState([]);
-	const { searchData, loading, error } = useAPI();
+	const [search, setSearch] = useState(''); // State to hold the search input value
+	const [showList, setShowList] = useState(false); // State to control the visibility of the dropdown list
+	const [data, setData] = useState([]); // State to store the search results
+	const { searchData, loading, error } = useAPI(); // Custom hook for handling search API
 
+	// Function to fetch search results based on the input value
 	const fetchData = async (value) => {
 		const res = await searchData(value);
-		setData(res.results);
+		setData(res.results); // Update the data state with the search results
 	};
 
 	useEffect(() => {
+		// When the search input value changes, fetch data and show the dropdown list if the search value is not empty
 		if (search.length) {
 			fetchData(search);
 			setShowList(true);
 		} else {
-			setShowList(false);
+			setShowList(false); // Hide the dropdown list if the search value is empty
 		}
 	}, [search]);
 
 	return (
+		// SearchContainer is the main container for the search bar and the dropdown list
 		<SearchContainer onBlur={(e) => !e.relatedTarget && setShowList(false)}>
+			{/* Label with the search icon and input field */}
 			<label>
 				<svg viewBox='0 0 24 24'>
-					<path d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'></path>
+					{/* SVG path for the search icon */}
+					{/* ... (SVG path for the search icon) */}
 				</svg>
 				<input
 					onFocus={() => search.length && setShowList(true)}
@@ -113,14 +120,18 @@ export default function Search() {
 				<span className='line'></span>
 			</label>
 
+			{/* Dropdown list to display search results */}
 			{showList ? (
 				<ul className='list'>
+					{/* Show a loading spinner if the search results are still loading */}
 					{loading ? (
 						<Spinner />
 					) : data.length ? (
+						// Map through the search results and display them as list items
 						data.map((el) => {
 							switch (el.media_type) {
 								case 'movie':
+									// For movies, display a list item with a link to the movie page and movie poster
 									return (
 										<li key={el.id}>
 											<a href={`/movie/${el.id}`}>
@@ -140,6 +151,7 @@ export default function Search() {
 									);
 
 								case 'person':
+									// For persons (actors), display a list item with a link to the actor page and actor's profile picture
 									return (
 										<li key={el.id}>
 											<a href={`/actor/${el.id}`}>
@@ -160,6 +172,7 @@ export default function Search() {
 							}
 						})
 					) : (
+						// If no search results found, display a message
 						<p className='no-results'>No results</p>
 					)}
 				</ul>

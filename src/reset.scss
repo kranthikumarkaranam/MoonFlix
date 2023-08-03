@@ -1,3 +1,6 @@
+/* CSS Reset or Normalize */
+
+/* Apply box-sizing to all elements and their pseudo-elements */
 * {
 	padding: 0px;
 	margin: 0px;
@@ -8,6 +11,7 @@
 	}
 }
 
+/* Reset the styling for certain elements to baseline */
 html,
 body,
 div,
@@ -97,11 +101,13 @@ video {
 	vertical-align: baseline;
 }
 
+/* Set 100% height for the html and body elements */
 html,
 body {
 	height: 100%;
 }
 
+/* Basic styling for the body */
 body {
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 	font-weight: 400;
@@ -109,15 +115,18 @@ body {
 	line-height: 1.5;
 }
 
+/* Remove text decoration for anchor tags without class */
 a:not([class]) {
 	text-decoration-skip-ink: auto;
 }
 
+/* Set max width for images and make them block-level elements */
 img {
 	max-width: 100%;
 	display: block;
 }
 
+/* Inherit font properties for form elements */
 input,
 textarea,
 button,
@@ -128,6 +137,7 @@ select {
 	background-color: transparent;
 }
 
+/* Remove focus outline for input and button elements */
 input,
 button {
 	&:focus,
@@ -136,27 +146,32 @@ button {
 	}
 }
 
+/* Set cursor to pointer for buttons and anchor tags */
 button,
 a {
 	cursor: pointer;
 }
 
+/* Inherit color and remove text decoration for anchor tags */
 a {
 	color: inherit;
 	text-decoration: none;
 }
 
+/* Remove default list-style for unordered and ordered lists */
 ul,
 li {
 	list-style: none;
 }
 
+/* Style the scrollbar */
 ::-webkit-scrollbar {
 	width: 4.3px;
+	/* Customize scrollbar thumb and track styles */
 	&-thumb {
-		background: #0080ff94;
+		background: #0080ff94; /* Semi-transparent blue color for the scrollbar thumb */
 	}
 	&-track {
-		background: #cfcfcf61;
+		background: #cfcfcf61; /* Semi-transparent grey color for the scrollbar track */
 	}
 }

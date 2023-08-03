@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 
+// An array to hold different category objects
 const categories = [
 	{
 		label: 'Popular',
@@ -20,6 +21,7 @@ const categories = [
 	},
 ];
 
+// An array to hold different genres objects
 export const genres = [
 	{
 		id: 28,
@@ -137,13 +139,17 @@ export const genres = [
 	},
 ];
 
+// Styled component for the navigation container
 const Navigation = styled.nav`
 	position: sticky;
 	overflow-y: auto;
 	flex: 0 0 240px;
 	top: 0;
 	height: 100vh;
+
+	// Wrapper for the logo and navigation lists
 	.wrapper {
+		// Styling for the logo container
 		.logo {
 			padding: 25px 0;
 			img {
@@ -151,14 +157,20 @@ const Navigation = styled.nav`
 				margin: 0 auto;
 			}
 		}
+
+		// Styling for each list
 		.list {
 			border-top: 1px solid rgba(0, 0, 0, 0.15);
 			padding: 8px 0;
+
+			// Styling for the list title and list items
 			&__title,
 			&__item {
 				line-height: 45px;
 				padding: 0 16px;
 			}
+
+			// Styling for the list title
 			&__title {
 				position: sticky;
 				top: 0;
@@ -167,13 +179,19 @@ const Navigation = styled.nav`
 				font-size: 0.875rem;
 				color: rgba(0, 0, 0, 0.6);
 			}
+
+			// Styling for each list item
 			&__item {
 				display: flex;
 				align-items: center;
 				transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+				// Background color change on hover
 				&:hover {
 					background-color: rgba(0, 0, 0, 0.06);
 				}
+
+				// Styling for the text content of the list item
 				p {
 					margin-left: 25px;
 				}
@@ -182,6 +200,7 @@ const Navigation = styled.nav`
 	}
 `;
 
+// React functional component for the navigation
 export default function Nav() {
 	return (
 		<Navigation>
@@ -194,6 +213,7 @@ export default function Nav() {
 				</div>
 				<ul className='list'>
 					<p className='list__title'>Categories</p>
+					{/* Looping through categories and rendering list items */}
 					{categories.map(({ label, icon, url }, i) => (
 						<Link
 							to={url}
@@ -213,6 +233,7 @@ export default function Nav() {
 				</ul>
 				<ul className='list'>
 					<p className='list__title'>Genres</p>
+					{/* Looping through genres and rendering list items */}
 					{genres.map(({ label, icon, url }) => (
 						<Link
 							to={url}

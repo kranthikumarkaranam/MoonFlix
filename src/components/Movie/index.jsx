@@ -12,6 +12,7 @@ import person from '../../assets/no-person.svg';
 import imgNotFound from '../../assets/no-image.svg';
 import Modal, { ModalProvider, BaseModalBackground } from 'styled-react-modal';
 
+// Styles for the movie container
 const MovieContainer = styled.div`
 	display: flex;
 	flex-wrap: wrap;
@@ -177,6 +178,7 @@ const MovieContainer = styled.div`
 	}
 `;
 
+// Styles for the modal
 const StyledModal = Modal.styled`
 	width: 560;
 	height: 315;
@@ -188,6 +190,7 @@ const StyledModal = Modal.styled`
 	transition : all 0.3s ease-in-out;
 `;
 
+// Styles for the fading background
 const FadingBackground = styled(BaseModalBackground)`
 	opacity: ${(props) => props.opacity};
 	transition: all 0.3s ease-in-out;
