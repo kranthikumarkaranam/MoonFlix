@@ -54,7 +54,6 @@ export default function NotFound() {
 		<Container>
 			<h1>Page Not Found</h1>
 			<a onClick={() => navigate(-1)}>
-				{' '}
 				{/* Go back link with onClick event */}
 				<span>🠐</span> {/* Arrow icon */}
 				<p>Go back</p> {/* Link text */}

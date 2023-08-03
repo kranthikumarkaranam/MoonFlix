@@ -41,9 +41,9 @@ export default function App() {
 	// Render the app layout with routes and components
 	return (
 		<Router>
-			<AppContainer className='app'>
+			<AppContainer>
 				{/* Navigation bar component */}
-				<Nav className='nav' />
+				<Nav />
 				<div className='stage'>
 					{/* Header component */}
 					<Header />
