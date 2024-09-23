@@ -3,10 +3,10 @@
     <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265072469-bb3cbb5b-49fb-411e-9cbe-210ee6b23109.png" alt="logo" width="180" height="180">
   </a>
   
-  <h1 align="center">E-Commerce Admin</h1>
+  <h1 align="center">MoonFlix</h1>
 
   <p align="center">
-Welcome to ADMIN, your ultimate store management solution! Easily handle multiple stores with features like Overview Charts 📊, Billboards 🏞️, Categories 📦, Products 🛒, and Orders 📋 management with store Settings ⚙️, and more. Our sleek UI offers light/dark modes and Clerk authentication for security 🔐. We use Prisma ORM for efficient database management and Next Cloudinary for image uploads 🖼️. Products are automatically archived upon purchase 💰, and you can feature them on your homepage with a simple click. So, why wait? Dive into ADMIN and take control of your stores like never before!
+🌙 MoonFlix — Elevate your movie experience with a single click! Discover cinematic marvels with effortless sorting by categories and genres to match your mood. Dive deeper with actor insights, captivating synopses, and mesmerizing trailers for upcoming gems. Unleash an enchanting adventure with MoonFlix's intuitive search. Say goodbye 👋 to endless scrolling and embrace a new era of movie magic. Explore MoonFlix today for unparalleled entertainment!
   </p>
 
 </p>
@@ -21,7 +21,6 @@ Welcome to ADMIN, your ultimate store management solution! Easily handle multipl
 - [💡 Key Features](#features)
 - [🛠️ Installation & Set Up](#installation)
 - [🌱 Environment Variables](#env)
-- [🏭 Building & Running for Production](#production)
 - [💻 Tech Stack](#tech)
 - [🍰 Contribution Guidelines](#contribution)
 - [📝 Creating a Pull Request](#pull)
@@ -34,7 +33,7 @@ Welcome to ADMIN, your ultimate store management solution! Easily handle multipl
 
 <p>Immerse yourself in its design and functionality with an interactive live demo — simply click the link to explore.</p>
 
-**Live Preview** ➡️ [Demo](https://ecommerce-admin-kranthi.vercel.app)
+**Live Preview** ➡️ [Demo](https://moonflix-kranthi.vercel.app/)
 
 <br>
 <br>
@@ -45,57 +44,33 @@ Welcome to ADMIN, your ultimate store management solution! Easily handle multipl
 
 <br>
 
-<h3 align="center">⬅️ Overview ➡️</h3>
+<h3 align="center">⬅️ Dropdown Search ➡️</h3>
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265055123-3d6acb2a-6773-40b7-8938-d5cc81b14245.png" alt="screenshot" width="auto" height="auto">
-
-<br>
-
-<h3 align="center">⬅️ Billboards ➡️</h3>
-
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265055510-86e5cd0b-a09e-4f41-8420-48cb34990e3f.png" alt="screenshot" width="auto" height="auto">
+<img src="https://github.com/user-attachments/assets/3ef2e0c4-eba1-42d4-a49d-b9c666f13a0e" alt="screenshot" width="auto" height="auto">
 
 <br>
 
-<h3 align="center">⬅️ Categories ➡️</h3>
+<h3 align="center">⬅️ Trailer Modal ➡️</h3>
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265057395-5b0fd404-a2da-4e5b-85e8-44a69cdfcac6.png" alt="screenshot" width="auto" height="auto">
-
-<br>
-
-<h3 align="center">⬅️ Sizes ➡️</h3>
-
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265057222-a2a76f11-f1a4-4fe8-92c3-86e2d5feb7d4.png" alt="screenshot" width="auto" height="auto">
+<img src="https://github.com/user-attachments/assets/05fc98bc-9fe2-4ac1-9a01-dac7e9cb908d" alt="screenshot" width="auto" height="auto">
 
 <br>
 
-<h3 align="center">⬅️ Colors ➡️</h3>
+<h3 align="center">⬅️ Movies List Page ➡️</h3>
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265057531-c839983d-787b-4033-8206-314c2c47c565.png" alt="screenshot" width="auto" height="auto">
-
-<br>
-
-<h3 align="center">⬅️ Products ➡️</h3>
-
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265057732-fd995659-412a-4435-a1a3-3dc1f2aecc41.png" alt="screenshot" width="auto" height="auto">
+<img src="https://github.com/user-attachments/assets/17199006-c57d-42f8-9ef1-31967b2f25ac" alt="screenshot" width="auto" height="auto">
 
 <br>
 
-<h3 align="center">⬅️ Orders ➡️</h3>
+<h3 align="center">⬅️ Movie Details Page ➡️</h3>
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265057875-71bf131b-a2f0-43d1-a944-17925b93a308.png" alt="screenshot" width="auto" height="auto">
-
-<br>
-
-<h3 align="center">⬅️ Settings ➡️</h3>
-
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265058082-2faf3fcb-e401-42b7-abf7-a5b3daa507c3.png" alt="screenshot" width="auto" height="auto">
+<img src="https://github.com/user-attachments/assets/929d34ae-f59a-4169-ad18-70c35e1f9d03" alt="screenshot" width="auto" height="auto">
 
 <br>
 
-<h3 align="center">⬅️ Create Store ➡️</h3>
+<h3 align="center">⬅️ Actor Page ➡️</h3>
 
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265058178-e3b4528c-4d33-4b12-977a-eacfe210f49a.png" alt="screenshot" width="auto" height="auto">
+<img src="https://github.com/user-attachments/assets/f5f48b72-b43b-459d-b5a6-3206b72f18f4" alt="screenshot" width="auto" height="auto">
 
 <br>
 <br>
@@ -104,32 +79,25 @@ Welcome to ADMIN, your ultimate store management solution! Easily handle multipl
 
 **Here are some of the standout features of the project:**
 
-- **Overview Charts** 📊: Gain insights into your store's performance with detailed charts and analytics.
+- **Effortless Sorting** 📂: Easily discover films by sorting them into categories and genres to match your mood.
 
-- **Billboards** 🏞️: Showcase your products and promotions with eye-catching billboards on your store's homepage.
+- **Actor Insights** 🎭: Access in-depth information about actors to enhance your viewing experience.
 
-- **Categories** 📦: Organize your products into categories for easy navigation and better user experience.
+- **Captivating Synopses** 📖: Read engaging summaries of films to help you choose your next watch.
 
-- **Products** 🛒: Add, edit, and manage your product catalog effortlessly.
+- **Mesmerizing Trailers** 🎥: Enjoy trailers for upcoming releases, providing a sneak peek into future cinematic gems.
 
-- **Orders** 📋: Streamline order processing and keep track of customer purchases.
+- **Intuitive Search** 🔍: Utilize a user-friendly search function to quickly find movies without endless scrolling.
 
-- **Store Settings** ⚙️: Customize your store's settings to meet your specific requirements.
+- **Movie Recommendations** 🌠: Receive personalized movie suggestions based on your preferences for a tailored viewing experience.
 
-- **Light/Dark Modes** 🌗: Enjoy a sleek and customizable user interface with light and dark modes.
+- **TMDB API Integration** 🌐: Leverage the TMDB API for accurate and up-to-date movie data, ensuring a comprehensive catalog.
 
-- **Clerk Authentication** 🔐: Ensure the security of your store with robust Clerk authentication.
+- **Pagination for Movies List** 📄: Navigate through extensive movie lists seamlessly with efficient pagination for improved user experience.
 
-- **Prisma ORM**: Utilize Prisma ORM for efficient and reliable database management.
+- **Enhanced Movie Discovery** 🌟: Explore a wide range of films and elevate your entertainment experience with just a click.
 
-- **Next Cloudinary Integration** 🖼️: Seamlessly upload and manage images for your products using Next Cloudinary.
-
-- **Automatic Product Archiving** 💰: Products are automatically archived upon purchase to keep your catalog up to date.
-
-- **Featured Products**: Easily feature products on your homepage with a simple click to boost sales.
-
-
-_Take control of your stores like never before with ADMIN! Get started today and revolutionize your store management experience._
+_Experience the magic of movies with MoonFlix today!_
 
 <br>
 <br>
@@ -139,13 +107,13 @@ _Take control of your stores like never before with ADMIN! Get started today and
 **1. Clone the repository:**
 
 ```sh
-git clone https://github.com/kranthikumarkaranam/e-commerce_admin.git
+git clone https://github.com/kranthikumarkaranam/MoonFlix.git
 ```
 
 **2. Go to the project directory:**
 
 ```sh
-cd e-commerce_admin
+cd MoonFlix
 ```
 
 **3. Install dependencies using npm:**
@@ -154,20 +122,12 @@ cd e-commerce_admin
 npm install
 ```
 
-**4. Applying Database Schema Changes with Prisma:**
-
-> Before running this command, ensure you have set up Prisma by `npx prisma generate`.
-
-```sh
-npx prisma db push
-```
-
-**5. Start the development server:**
+**4. Start the development server:**
 
 > Before starting the server add these _[env](#env)_ variables.
 
 ```sh
-npm run dev
+npm start
 ```
 
 <br>
@@ -177,36 +137,9 @@ npm run dev
 
 > To run this project, you need to add the following environment variables to your `.env` file in the project's root directory.
 
-> Also, feel free to take a look at the `.env.example` file _[here](https://github.com/kranthikumarkaranam/e-commerce_admin/blob/main/.env.example)_.
+> Also, feel free to take a look at the `.env.example` file _[here](https://github.com/kranthikumarkaranam/MoonFlix/blob/main/.env.example)_.
 
-- `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
-- `CLERK_SECRET_KEY`
-- `NEXT_PUBLIC_CLERK_SIGN_IN_URL`
-- `NEXT_PUBLIC_CLERK_SIGN_UP_URL`
-- `NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL`
-- `NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL`
-- `DATABASE_URL`
-- `NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME`
-- `STRIPE_API_KEY`
-- `STRIPE_WEBHOOK_SECRET`
-- `FRONTEND_STORE_URL`
-
-<br>
-<br>
-
-<h2 id="production">🏭 Building & Running for Production</h2>
-
-**1. Generate a full static production build:**
-
-```sh
-npm run build
-```
-
-**2. Preview the site as it will appear once deployed:**
-
-```sh
-npm run start
-```
+- `REACT_APP_TMDB_KEY`
 
 <br>
 <br>
@@ -216,27 +149,10 @@ npm run start
 **Technologies used in the project:**
 
 - React.js
-- NEXT.js
-- TypeScript
-- Tailwind CSS
-- zod
-- react-hot-toast
-- shadcn/ui
-- Radix UI
-- Lucide React
-- Next Cloudinary
-- Clerk
-- React Hook Form
-- Prisma ORM
-- Prisma Client
-- React Table
-- TanStack Table
-- date-fns
-- react-spinners
-- Recharts
-- Stripe
-- axios
-- zustand
+- React Router
+- Styled Components
+- SASS
+- AOS
 
 <br>
 <br>
@@ -271,7 +187,7 @@ Contributions are what make the open source community such an amazing place to b
 
 Thank you for taking the time to explore the project. I hope it brings value and joy to those who use it.
 
-If you require any help or have any questions, please don't hesitate to reach out to me _[here](mailto:2019271@iiitdmj.ac.in)_.
+If you require any help or have any questions, please don't hesitate to reach out to me _[here](mailto:kranthikaranam258@gmail.com)_.
 
 <br>
 <br>
