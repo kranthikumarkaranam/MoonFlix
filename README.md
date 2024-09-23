@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://github.com/kranthikumarkaranam/e-commerce_admin">
-    <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/109801522/265072469-bb3cbb5b-49fb-411e-9cbe-210ee6b23109.png" alt="logo" width="180" height="180">
+    <img src="https://github.com/user-attachments/assets/6591cd15-5e64-4747-afad-f0a86d2426c2" alt="logo" width="180" height="180">
   </a>
   
   <h1 align="center">MoonFlix</h1>
@@ -161,11 +161,11 @@ npm start
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- See _[Contributing](https://github.com/kranthikumarkaranam/e-commerce_admin/blob/main/CONTRIBUTING.md)_ for ways to get started.
-- If you have suggestions for adding or removing projects, feel free to _[open an issue](https://github.com/kranthikumarkaranam/e-commerce_admin/issues/new)_ to discuss it, or directly create a pull request by following the guidelines _[here](#pull)_.
+- See _[Contributing](https://github.com/kranthikumarkaranam/MoonFlix/blob/main/CONTRIBUTING.md)_ for ways to get started.
+- If you have suggestions for adding or removing projects, feel free to _[open an issue](https://github.com/kranthikumarkaranam/MoonFlix/issues/new)_ to discuss it, or directly create a pull request by following the guidelines _[here](#pull)_.
 - Please make sure you check your spelling and grammar.
 - Create individual PR for each suggestion.
-- Also, please read through the _[Code of Conduct](https://github.com/kranthikumarkaranam/e-commerce_admin/blob/main/CODE_OF_CONDUCT.md)_ before posting your first idea as well.
+- Also, please read through the _[Code of Conduct](https://github.com/kranthikumarkaranam/MoonFlix/blob/main/CODE_OF_CONDUCT.md)_ before posting your first idea as well.
 
 <br>
 <br>
