@@ -1,5 +1,5 @@
 <p align="center">
-   <a href="https://github.com/kranthikumarkaranam/e-commerce_admin">
+   <a href="https://github.com/kranthikumarkaranam/MoonFlix">
     <img src="https://github.com/user-attachments/assets/6591cd15-5e64-4747-afad-f0a86d2426c2" alt="logo" width="180" height="180">
   </a>
   
